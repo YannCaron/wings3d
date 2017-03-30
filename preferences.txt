@@ -32,7 +32,8 @@
 {hl_groundcol,{0.026,0.024,0.021}}. 
 {hl_lightpos,{3.0e3,1.0e4,1.0e3}}. 
 {hl_skycol,{0.95,0.95,0.9}}. 
-{last_axis,{{0.0,0.0,0.0},{1.0,0.0,0.0}}}. 
+{last_axis,{{0.0,0.0,0.0},
+            {0.5773502691896258,0.5773502691896258,0.5773502691896258}}}. 
 {legacy_colors_checked,true}. 
 {magnet_distance_route,shortest}. 
 {magnet_mask_on,true}. 
@@ -147,8 +148,71 @@
 {{wpc_3ds,default_filetype},".bmp"}. 
 {{wpc_3ds,swap_y_z},true}. 
 {{wpc_collada,swap_y_z},false}. 
-{{bindkey,vertex,71},{vertex,{move,x}},user}. 
+{{bindkey,body,103},{body,{move,free}},user}. 
+{{bindkey,body,114},{body,{rotate,{'ASK',{[],[center,free],[magnet]}}}},user}. 
+{{bindkey,body,115},
+ {body,{scale,{'ASK',{[],[center,uniform],[magnet]}}}},
+ user}. 
+{{bindkey,body,{103,[alt]}},{body,{move,z}},user}. 
+{{bindkey,body,{103,[ctrl]}},{body,{move,y}},user}. 
+{{bindkey,body,{103,[ctrl,shift]}},{body,{move,normal}},user}. 
+{{bindkey,body,{103,[shift]}},{body,{move,x}},user}. 
+{{bindkey,body,{114,[alt]}},
+ {body,{rotate,{'ASK',{[],[center,z],[magnet]}}}},
+ user}. 
+{{bindkey,body,{114,[ctrl]}},
+ {body,{rotate,{'ASK',{[],[center,y],[magnet]}}}},
+ user}. 
+{{bindkey,body,{114,[shift]}},
+ {body,{rotate,{'ASK',{[],[center,x],[magnet]}}}},
+ user}. 
+{{bindkey,edge,82},{edge,{rotate,{'ASK',{[],[center,x],[magnet]}}}},user}. 
+{{bindkey,edge,103},{edge,{move,free}},user}. 
+{{bindkey,edge,114},{edge,{rotate,{'ASK',{[],[center,free],[magnet]}}}},user}. 
+{{bindkey,edge,115},
+ {edge,{scale,{'ASK',{[],[center,uniform],[magnet]}}}},
+ user}. 
+{{bindkey,edge,{103,[alt]}},{edge,{move,z}},user}. 
+{{bindkey,edge,{103,[ctrl]}},{edge,{move,y}},user}. 
+{{bindkey,edge,{103,[ctrl,shift]}},{edge,{move,normal}},user}. 
+{{bindkey,edge,{103,[shift]}},{edge,{move,x}},user}. 
+{{bindkey,edge,{114,[alt]}},
+ {edge,{rotate,{'ASK',{[],[center,z],[magnet]}}}},
+ user}. 
+{{bindkey,edge,{114,[ctrl]}},
+ {edge,{rotate,{'ASK',{[],[center,y],[magnet]}}}},
+ user}. 
+{{bindkey,face,82},{face,{rotate,{'ASK',{[],[center,x],[magnet]}}}},user}. 
+{{bindkey,face,103},{face,{move,free}},user}. 
+{{bindkey,face,114},{face,{rotate,{'ASK',{[],[center,free],[magnet]}}}},user}. 
+{{bindkey,face,115},
+ {face,{scale,{'ASK',{[],[center,uniform],[magnet]}}}},
+ user}. 
+{{bindkey,face,{103,[alt]}},{face,{move,z}},user}. 
+{{bindkey,face,{103,[ctrl]}},{face,{move,y}},user}. 
+{{bindkey,face,{103,[ctrl,shift]}},{face,{move,normal}},user}. 
+{{bindkey,face,{103,[shift]}},{face,{move,x}},user}. 
+{{bindkey,face,{114,[alt]}},
+ {face,{rotate,{'ASK',{[],[center,z],[magnet]}}}},
+ user}. 
+{{bindkey,face,{114,[ctrl]}},
+ {face,{rotate,{'ASK',{[],[center,y],[magnet]}}}},
+ user}. 
+{{bindkey,vertex,82},{vertex,{rotate,{'ASK',{[],[center,x],[magnet]}}}},user}. 
 {{bindkey,vertex,103},{vertex,{move,free}},user}. 
+{{bindkey,vertex,114},
+ {vertex,{rotate,{'ASK',{[],[center,free],[magnet]}}}},
+ user}. 
+{{bindkey,vertex,115},
+ {vertex,{scale,{'ASK',{[],[center,uniform],[magnet]}}}},
+ user}. 
 {{bindkey,vertex,{103,[alt]}},{vertex,{move,z}},user}. 
 {{bindkey,vertex,{103,[ctrl]}},{vertex,{move,y}},user}. 
 {{bindkey,vertex,{103,[ctrl,shift]}},{vertex,{move,normal}},user}. 
+{{bindkey,vertex,{103,[shift]}},{vertex,{move,x}},user}. 
+{{bindkey,vertex,{114,[alt]}},
+ {vertex,{rotate,{'ASK',{[],[center,z],[magnet]}}}},
+ user}. 
+{{bindkey,vertex,{114,[ctrl]}},
+ {vertex,{rotate,{'ASK',{[],[center,y],[magnet]}}}},
+ user}. 
