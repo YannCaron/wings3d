@@ -1,0 +1,154 @@
+{active_shader,1}. 
+{advanced_menus,true}. 
+{cam_rotation_speed,25}. 
+{camera_mode,tds}. 
+{color_ctrl_palette,[{0.0,0.0,0.0},
+                     {17.0,17.0,17.0},
+                     {34.0,34.0,34.0},
+                     {51.0,51.0,51.0},
+                     {68.0,68.0,68.0},
+                     {85.0,85.0,85.0},
+                     {102.0,102.0,102.0},
+                     {119.0,119.0,119.0},
+                     {136.0,136.0,136.0},
+                     {153.0,153.0,153.0},
+                     {170.0,170.0,170.0},
+                     {187.0,187.0,187.0},
+                     {204.0,204.0,204.0},
+                     {221.0,221.0,221.0},
+                     {238.0,238.0,238.0},
+                     {255.0,255.0,255.0}]}. 
+{color_dialog_native,true}. 
+{console_font,#{face => "Sans",size => 10,style => normal,type => font,weight => normal}}. 
+{current_directory,"//home/cyann/projects/Algoid/Design"}. 
+{develop_gl_errors,false}. 
+{develop_time_commands,false}. 
+{develop_undo_stat,false}. 
+{disabled_plugins,[]}. 
+{file_recovered,false}. 
+{filter_texture,false}. 
+{frame_disregards_mirror,false}. 
+{highlight_zoom_aim,false}. 
+{hl_groundcol,{0.026,0.024,0.021}}. 
+{hl_lightpos,{3.0e3,1.0e4,1.0e3}}. 
+{hl_skycol,{0.95,0.95,0.9}}. 
+{last_axis,{{0.0,0.0,0.0},{1.0,0.0,0.0}}}. 
+{legacy_colors_checked,true}. 
+{magnet_distance_route,shortest}. 
+{magnet_mask_on,true}. 
+{magnet_radius,1.0}. 
+{magnet_type,dome}. 
+{num_buttons,3}. 
+{number_of_lights,2}. 
+{pan_speed,25}. 
+{pan_speed_arrow_keys,50}. 
+{pref_directory,"/home/cyann/.wings3d/backup_prefs.txt"}. 
+{recent_files,[{"Turtle3d.wings",
+                "//home/cyann/projects/Algoid/Design/Turtle3d.wings"}]}. 
+{render_load_image,false}. 
+{save_unused_materials,false}. 
+{saved_selections_cycle_by_mode,false}. 
+{saved_windows,[{geom,{142,56},
+                      {1060,829},
+                      [{rollup,false},
+                       {show_info_text,true},
+                       {show_groundplane,true},
+                       {show_axes,true},
+                       {fov,45.0},
+                       {clipping_planes,0.1,1.0e4},
+                       {toolbar_hidden,false}]},
+                {{object,geom},{142,0},{129,886},[{rollup,false}]}]}. 
+{saved_windows2,{[{split,splitVertically,834},
+                  {geom,{-1,-1},
+                        {-1,-1},
+                        [{show_info_text,true},
+                         {show_groundplane,true},
+                         {show_cam_imageplane,false},
+                         {show_axes,true},
+                         {fov,45.0},
+                         {clipping_planes,{0.1,1.0e4}}]},
+                  {{object,geom},{-1,-1},{-1,-1},[]}],
+                 []}}. 
+{scene_lights,true}. 
+{sculpt_constraint_axis,none}. 
+{sculpt_initial,false}. 
+{sculpt_magnet,{false,0.7785245353812382}}. 
+{sculpt_magnet_influence,true}. 
+{sculpt_magnet_type,dome}. 
+{sculpt_mode,pull}. 
+{sculpt_strength,0.06500000000000004}. 
+{show_backfaces,true}. 
+{show_bb,true}. 
+{show_bb_center,true}. 
+{show_colors,true}. 
+{show_edges,true}. 
+{show_magnet_mask,true}. 
+{show_materials,true}. 
+{show_normal_maps,true}. 
+{show_normals,false}. 
+{show_textures,true}. 
+{system_font,#{face => "Noto Sans",size => 10,style => normal,type => font,weight => normal}}. 
+{tweak_active,false}. 
+{tweak_axis,screen}. 
+{tweak_axis_toggle,[]}. 
+{tweak_click_speed,300000}. 
+{tweak_geo_point,{{{0.7509881094635443,0.47758935537620667,
+                    0.45598823129079885},
+                   {0.7509881094635443,0.47758935537620667,
+                    0.45598823129079885},
+                   {0.1459982405708865,1.2922725234366768,
+                    0.016479542578963446}},
+                  {vertex,original,{3,3}}}}. 
+{tweak_mag_adj_sensitivity,0.01}. 
+{tweak_magnet,{false,dome,0.6299999999999999}}. 
+{tweak_magnet_influence,true}. 
+{tweak_point,from_cursor}. 
+{tweak_prefs,{tds,[{{1,{false,false,false}},move}]}}. 
+{tweak_radial,false}. 
+{tweak_speed,0.5}. 
+{tweak_vector_size,0.5}. 
+{tweak_vector_width,2.0}. 
+{tweak_xyz,[false,false,false]}. 
+{viewer_frame,1}. 
+{wh_pan_spd,50}. 
+{wh_rot_spd,7.5}. 
+{wh_scroll_info,true}. 
+{wheel_adds,false}. 
+{wheel_zoom_factor,20}. 
+{wheel_zoom_factor_alt,1}. 
+{wheel_zooms,true}. 
+{window_size,{1280,959}}. 
+{{bindkey,49},{view,{along,x}},user}. 
+{{bindkey,51},{view,{along,z}},user}. 
+{{bindkey,55},{view,{along,y}},user}. 
+{{bindkey,115},{tools,sculpt},user}. 
+{{bindkey,116},{tools,tweak_menu},user}. 
+{{bindkey,{121,[ctrl]}},{edit,redo},user}. 
+{{bindkey,{122,[ctrl]}},{edit,undo},user}. 
+{{viewer,bmp},[]}. 
+{{viewer,exr},[]}. 
+{{viewer,hdr},[]}. 
+{{viewer,jpg},[]}. 
+{{viewer,png},[]}. 
+{{viewer,tga},[]}. 
+{{viewer_postopts,bmp},[]}. 
+{{viewer_postopts,exr},[]}. 
+{{viewer_postopts,hdr},[]}. 
+{{viewer_postopts,jpg},[]}. 
+{{viewer_postopts,png},[]}. 
+{{viewer_postopts,tga},[]}. 
+{{viewer_preopts,bmp},[]}. 
+{{viewer_preopts,exr},[]}. 
+{{viewer_preopts,hdr},[]}. 
+{{viewer_preopts,jpg},[]}. 
+{{viewer_preopts,png},[]}. 
+{{viewer_preopts,tga},[]}. 
+{{wp9_dialogs,utf8},true}. 
+{{wpc_3ds,default_filetype},".bmp"}. 
+{{wpc_3ds,swap_y_z},true}. 
+{{wpc_collada,swap_y_z},false}. 
+{{bindkey,vertex,71},{vertex,{move,x}},user}. 
+{{bindkey,vertex,103},{vertex,{move,free}},user}. 
+{{bindkey,vertex,{103,[alt]}},{vertex,{move,z}},user}. 
+{{bindkey,vertex,{103,[ctrl]}},{vertex,{move,y}},user}. 
+{{bindkey,vertex,{103,[ctrl,shift]}},{vertex,{move,normal}},user}. 
