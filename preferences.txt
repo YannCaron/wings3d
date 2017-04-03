@@ -168,6 +168,7 @@
  user}. 
 {{bindkey,edge,82},{edge,{rotate,{'ASK',{[],[center,x],[magnet]}}}},user}. 
 {{bindkey,edge,103},{edge,{move,free}},user}. 
+{{bindkey,edge,104},{edge,{hardness,hard}},user}. 
 {{bindkey,edge,114},{edge,{rotate,{'ASK',{[],[center,free],[magnet]}}}},user}. 
 {{bindkey,edge,115},
  {edge,{scale,{'ASK',{[],[center,uniform],[magnet]}}}},
@@ -176,6 +177,7 @@
 {{bindkey,edge,{103,[ctrl]}},{edge,{move,y}},user}. 
 {{bindkey,edge,{103,[ctrl,shift]}},{edge,{move,normal}},user}. 
 {{bindkey,edge,{103,[shift]}},{edge,{move,x}},user}. 
+{{bindkey,edge,{104,[alt]}},{edge,{hardness,soft}},user}. 
 {{bindkey,edge,{114,[alt]}},
  {edge,{rotate,{'ASK',{[],[center,z],[magnet]}}}},
  user}. 
