@@ -2,6 +2,8 @@
 {advanced_menus,true}. 
 {cam_rotation_speed,25}. 
 {camera_mode,tds}. 
+{circularise_drag,relative}. 
+{circularise_flatten,true}. 
 {color_ctrl_palette,[{0.0,0.0,0.0},
                      {17.0,17.0,17.0},
                      {34.0,34.0,34.0},
@@ -28,12 +30,12 @@
 {file_recovered,false}. 
 {filter_texture,false}. 
 {frame_disregards_mirror,false}. 
-{highlight_zoom_aim,false}. 
+{highlight_zoom_aim,true}. 
 {hl_groundcol,{0.026,0.024,0.021}}. 
 {hl_lightpos,{3.0e3,1.0e4,1.0e3}}. 
 {hl_skycol,{0.95,0.95,0.9}}. 
-{last_axis,{{0.0,0.0,0.0},
-            {0.5773502691896258,0.5773502691896258,0.5773502691896258}}}. 
+{last_axis,{{-0.23153503898419517,1.2278019948991636,0.3605392146121469},
+            {5.094821592442988e-17,2.908182412845912e-15,1.0}}}. 
 {legacy_colors_checked,true}. 
 {magnet_distance_route,shortest}. 
 {magnet_mask_on,true}. 
@@ -44,8 +46,8 @@
 {pan_speed,25}. 
 {pan_speed_arrow_keys,50}. 
 {pref_directory,"/home/cyann/.wings3d/backup_prefs.txt"}. 
-{recent_files,[{"Turtle3d.wings",
-                "//home/cyann/projects/Algoid/Design/Turtle3d.wings"}]}. 
+{recent_files,[{"Turtle3d_01.wings",
+                "//home/cyann/projects/Algoid/Design/Turtle3d_01.wings"}]}. 
 {render_load_image,false}. 
 {save_unused_materials,false}. 
 {saved_selections_cycle_by_mode,false}. 
@@ -88,22 +90,24 @@
 {show_normal_maps,true}. 
 {show_normals,false}. 
 {show_textures,true}. 
+{slide_mode,relative}. 
+{slide_stop,false}. 
 {system_font,#{face => "Noto Sans",size => 10,style => normal,type => font,weight => normal}}. 
-{tweak_active,false}. 
+{tweak_active,true}. 
 {tweak_axis,screen}. 
 {tweak_axis_toggle,[]}. 
 {tweak_click_speed,300000}. 
-{tweak_geo_point,{{{0.7509881094635443,0.47758935537620667,
-                    0.45598823129079885},
-                   {0.7509881094635443,0.47758935537620667,
-                    0.45598823129079885},
-                   {0.1459982405708865,1.2922725234366768,
-                    0.016479542578963446}},
-                  {vertex,original,{3,3}}}}. 
+{tweak_geo_point,{{{-0.9703136961555491,-0.17534672276334526,
+                    -0.1665678776628653},
+                   {-0.9703136961555491,-0.17534672276334526,
+                    -0.1665678776628653},
+                   {-0.5566085680898434,1.1153822702597782,
+                    0.4986986087264542}},
+                  {face,mirror,{12,90}}}}. 
 {tweak_mag_adj_sensitivity,0.01}. 
 {tweak_magnet,{false,dome,0.6299999999999999}}. 
 {tweak_magnet_influence,true}. 
-{tweak_point,from_cursor}. 
+{tweak_point,none}. 
 {tweak_prefs,{tds,[{{1,{false,false,false}},move}]}}. 
 {tweak_radial,false}. 
 {tweak_speed,0.5}. 
@@ -114,7 +118,7 @@
 {wh_pan_spd,50}. 
 {wh_rot_spd,7.5}. 
 {wh_scroll_info,true}. 
-{wheel_adds,false}. 
+{wheel_adds,true}. 
 {wheel_zoom_factor,20}. 
 {wheel_zoom_factor_alt,1}. 
 {wheel_zooms,true}. 
@@ -122,8 +126,10 @@
 {{bindkey,49},{view,{along,x}},user}. 
 {{bindkey,51},{view,{along,z}},user}. 
 {{bindkey,55},{view,{along,y}},user}. 
+{{bindkey,99},{tools,connect},user}. 
 {{bindkey,115},{tools,sculpt},user}. 
 {{bindkey,116},{tools,tweak_menu},user}. 
+{{bindkey,{108,[alt]}},{select,{edge_loop,edge_ring}},user}. 
 {{bindkey,{121,[ctrl]}},{edit,redo},user}. 
 {{bindkey,{122,[ctrl]}},{edit,undo},user}. 
 {{viewer,bmp},[]}. 
@@ -148,6 +154,9 @@
 {{wpc_3ds,default_filetype},".bmp"}. 
 {{wpc_3ds,swap_y_z},true}. 
 {{wpc_collada,swap_y_z},false}. 
+{{bindkey,body,68},{body,{duplicate,free}},user}. 
+{{bindkey,body,71},{body,{move,x}},user}. 
+{{bindkey,body,82},{body,{rotate,{'ASK',{[],[center,x],[]}}}},user}. 
 {{bindkey,body,103},{body,{move,free}},user}. 
 {{bindkey,body,114},{body,{rotate,{'ASK',{[],[center,free],[magnet]}}}},user}. 
 {{bindkey,body,115},
@@ -156,7 +165,6 @@
 {{bindkey,body,{103,[alt]}},{body,{move,z}},user}. 
 {{bindkey,body,{103,[ctrl]}},{body,{move,y}},user}. 
 {{bindkey,body,{103,[ctrl,shift]}},{body,{move,normal}},user}. 
-{{bindkey,body,{103,[shift]}},{body,{move,x}},user}. 
 {{bindkey,body,{114,[alt]}},
  {body,{rotate,{'ASK',{[],[center,z],[magnet]}}}},
  user}. 
@@ -185,7 +193,9 @@
  {edge,{rotate,{'ASK',{[],[center,y],[magnet]}}}},
  user}. 
 {{bindkey,face,82},{face,{rotate,{'ASK',{[],[center,x],[magnet]}}}},user}. 
+{{bindkey,face,101},{face,{extrude,{region,normal}}},user}. 
 {{bindkey,face,103},{face,{move,free}},user}. 
+{{bindkey,face,104},{face,hide},user}. 
 {{bindkey,face,114},{face,{rotate,{'ASK',{[],[center,free],[magnet]}}}},user}. 
 {{bindkey,face,115},
  {face,{scale,{'ASK',{[],[center,uniform],[magnet]}}}},
